@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>CSS居中对齐 | Introduction</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    
+    <link rel="prev" href="../web-basic/index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="1.1"
+        data-chapter-title="CSS居中对齐"
+        data-filepath="web-basic/css-center-align.md"
+        data-basepath=".."
+        data-revision="Thu Mar 17 2016 20:16:55 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="web-basic/index.html">
+            
+                
+                    <a href="../web-basic/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        HTML/CSS基础
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.1" data-path="web-basic/css-center-align.html">
+            
+                
+                    <a href="../web-basic/css-center-align.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        CSS居中对齐
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Introduction</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="css-&#x5C45;&#x4E2D;&#x5BF9;&#x9F50;">CSS &#x5C45;&#x4E2D;&#x5BF9;&#x9F50;</h1>
+<hr>
+<p>CSS &#x5C45;&#x4E2D;&#x5BF9;&#x9F50;&#x76F8;&#x5173;&#x7684;&#x95EE;&#x9898;&#x548C;&#x603B;&#x7ED3;&#x3002;</p>
+<h3 id="&#x6C34;&#x5E73;&#x5C45;&#x4E2D;">&#x6C34;&#x5E73;&#x5C45;&#x4E2D;</h3>
+<h4 id="&#x6C34;&#x5E73;&#x5C45;&#x4E2D;&#x884C;&#x7EA7;&#x5143;&#x7D20;&#x6216;&#x884C;&#x76D2;display-&#x4E3A;-inline-&#x6216;-inline">&#x6C34;&#x5E73;&#x5C45;&#x4E2D;&#x884C;&#x7EA7;&#x5143;&#x7D20;&#x6216;&#x884C;&#x76D2;(display &#x4E3A; inline &#x6216; inline-*)</h4>
+<pre><code>.parent { text-align: center; }
+</code></pre><h4 id="&#x6C34;&#x5E73;&#x5C45;&#x4E2D;&#x5757;&#x7EA7;&#x5143;&#x7D20;display-&#x4E3A;-block">&#x6C34;&#x5E73;&#x5C45;&#x4E2D;&#x5757;&#x7EA7;&#x5143;&#x7D20;(display &#x4E3A; block)</h4>
+<pre><code>// &#x5757;&#x7EA7;&#x5143;&#x7D20;&#x9ED8;&#x8BA4;&#x5360;&#x6EE1;&#x5168;&#x90E8;&#x5BBD;&#x5EA6;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x8BBE;&#x7F6E; width
+.element {
+  margin: 0, auto;
+  width: 100px;
+}
+</code></pre><h4 id="&#x6C34;&#x5E73;&#x5C45;&#x4E2D;&#x591A;&#x4E2A;&#x5757;&#x7EA7;&#x5143;&#x7D20;">&#x6C34;&#x5E73;&#x5C45;&#x4E2D;&#x591A;&#x4E2A;&#x5757;&#x7EA7;&#x5143;&#x7D20;</h4>
+<p>&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x9ED8;&#x8BA4;&#x5806;&#x53E0;&#x6392;&#x5217;&#xFF0C;&#x60F3;&#x8981;&#x5728;&#x4E00;&#x884C;&#x4E0A;&#x6392;&#x5217;&#x591A;&#x4E2A;&#x8DE8;&#x7EA7;&#x5143;&#x7D20;&#xFF0C;&#x8981;&#x5C06; display &#x8BBE;&#x7F6E;&#x4E3A; inline-block.</p>
+<pre><code>.parent { text-align: center; }
+.child {
+  display: inline-block;
+}
+</code></pre><p>&#x6216;&#x8005;&#x53EF;&#x4EE5;&#x7528;flex&#x5E03;&#x5C40;&#xFF1A;</p>
+<pre><code>.parent {
+  display: flex;
+  justify-content: center;
+}
+</code></pre><h3 id="&#x5782;&#x76F4;&#x5C45;&#x4E2D;">&#x5782;&#x76F4;&#x5C45;&#x4E2D;</h3>
+<p>CSS &#x4E2D;&#x6709; vertical-align &#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x987E;&#x540D;&#x601D;&#x4E49;&#x5C31;&#x662F;&#x5782;&#x76F4;&#x5C45;&#x4E2D;&#xFF0C;&#x90A3;&#x4E48;&#x662F;&#x4E0D;&#x662F;&#x7528;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x5C31;&#x597D;&#x3002;&#x5F88;&#x9057;&#x61BE;&#x4E0D;&#x53EF;&#x4EE5;&#xFF0C;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x6307;&#x5B9A;&#x884C;&#x5185;&#x5143;&#x7D20;&#x4E0E;&#x884C;&#x57FA;&#x7EBF;&#x7684;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x5B83;&#x7684;&#x4F5C;&#x7528;&#x8303;&#x56F4;&#x5728;&#x4E00;&#x884C;&#x4E0A;&#xFF0C;&#x5E76;&#x4E0D;&#x9002;&#x5408;&#x5728;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x91CC;&#x9762;&#x5782;&#x76F4;&#x5C45;&#x4E2D;&#x5BF9;&#x9F50;&#x5B50;&#x5143;&#x7D20;&#x3002;&#x5F53;&#x7136;&#x4E5F;&#x6709;&#x4F8B;&#x5916;&#xFF0C;&#x4E0B;&#x9762;&#x4F1A;&#x63D0;&#x5230;&#x3002;</p>
+<h4 id="&#x5782;&#x76F4;&#x5C45;&#x4E2D;&#x884C;&#x7EA7;&#x5143;&#x7D20;">&#x5782;&#x76F4;&#x5C45;&#x4E2D;&#x884C;&#x7EA7;&#x5143;&#x7D20;</h4>
+<h5 id="&#x5355;&#x884C;">&#x5355;&#x884C;</h5>
+<p>&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4E0A;&#x4E0B;&#x76F8;&#x7B49;&#x7684;padding:</p>
+<pre><code>.element { padding: 20px 0; }
+</code></pre><p>&#x6216;&#x8005;&#x6307;&#x5B9A; line-height &#x7B49;&#x4E8E; height&#xFF1A;</p>
+<pre><code>.center-text {
+  height: 100px;
+  line-height: 100px;
+}
+</code></pre><h5 id="&#x591A;&#x884C;">&#x591A;&#x884C;</h5>
+<p>&#x591A;&#x884C;&#x7684;&#x60C5;&#x51B5;&#x4E5F;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4E0A;&#x4E0B;&#x7684;padding&#x3002;</p>
+<p>&#x6216;&#x8005;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E; display &#x4E3A; table&#xFF0C;&#x5BF9;&#x4E8E; table-cell &#x800C;&#x8A00; vertical-align &#x786E;&#x5B9E;&#x662F;&#x5782;&#x76F4;&#x5C45;&#x4E2D;&#x7684;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x524D;&#x9762;&#x63D0;&#x5230;&#x7684;&#x7279;&#x5217;&#x3002;</p>
+<pre><code>.parent {
+  display: table;
+}
+.child {
+  display: table-cell;
+  vertical-align: middle;
+}
+</code></pre><p>&#x5F53;&#x7136;flex&#x5E03;&#x5C40;&#x4E5F;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x7684;&#x5B9E;&#x73B0;&#xFF1A;</p>
+<pre><code>.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+}
+</code></pre><p>&#x53E6;&#x5916;&#x8FD8;&#x6709;&#x4E00;&#x79CD;&#x4F7F;&#x7528;CSS&#x4F2A;&#x5143;&#x7D20;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<pre><code>.parent:before {
+  content: &apos; &apos;;
+  display: inline-block;
+  height&#xFF1A; 100%&#xFF1B;
+  vertical-align: middle;
+}
+
+.child {
+  display: inline-block;
+  vertical-align: middle;
+}
+</code></pre><h4 id="&#x5782;&#x76F4;&#x5C45;&#x4E2D;&#x5757;&#x7EA7;&#x5143;&#x7D20;">&#x5782;&#x76F4;&#x5C45;&#x4E2D;&#x5757;&#x7EA7;&#x5143;&#x7D20;</h4>
+<h5 id="&#x9AD8;&#x5EA6;&#x5DF2;&#x77E5;">&#x9AD8;&#x5EA6;&#x5DF2;&#x77E5;</h5>
+<pre><code>.parent {
+  postion: relative;
+}
+.child {
+  position: absolute;
+  top: 50%;
+  height: 100px;
+  margin-top: -50px;
+}
+</code></pre><h5 id="&#x9AD8;&#x5EA6;&#x672A;&#x77E5;">&#x9AD8;&#x5EA6;&#x672A;&#x77E5;</h5>
+<pre><code>.parent { position: relative; }
+.child {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+</code></pre><p>&#x6216;&#x8005;&#x4F7F;&#x7528;flex&#x5E03;&#x5C40;&#x3002;</p>
+<h3 id="&#x7EDD;&#x5BF9;&#x5C45;&#x4E2D;&#x540C;&#x65F6;&#x6C34;&#x5E73;&#x548C;&#x5782;&#x76F4;&#x5C45;&#x4E2D;">&#x7EDD;&#x5BF9;&#x5C45;&#x4E2D;(&#x540C;&#x65F6;&#x6C34;&#x5E73;&#x548C;&#x5782;&#x76F4;&#x5C45;&#x4E2D;)</h3>
+<h4 id="&#x9AD8;&#x5EA6;&#x5BBD;&#x5EA6;&#x5DF2;&#x77E5;">&#x9AD8;&#x5EA6;&#x5BBD;&#x5EA6;&#x5DF2;&#x77E5;</h4>
+<pre><code>.parent { position: relative; }
+.child {
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -70px 0 0 - 170px;
+}
+</code></pre><h4 id="&#x9AD8;&#x5EA6;&#x5BBD;&#x5EA6;&#x672A;&#x77E5;">&#x9AD8;&#x5EA6;&#x5BBD;&#x5EA6;&#x672A;&#x77E5;</h4>
+<pre><code>.parent { position : relative; }
+.child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</code></pre><h4 id="flex&#x5E03;&#x5C40;">flex&#x5E03;&#x5C40;</h4>
+<pre><code>.flex-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</code></pre><h3 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h3>
+<p>CSS &#x4E2D;&#x6709;&#x5F88;&#x591A;&#x7684;&#x65B9;&#x5F0F;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x5C45;&#x4E2D;&#x5BF9;&#x9F50;&#xFF0C;&#x5305;&#x62EC;&#x6C34;&#x5E73;&#x5C45;&#x4E2D;&#x548C;&#x5782;&#x76F4;&#x5C45;&#x4E2D;&#xFF0C;&#x53EA;&#x662F;&#x9700;&#x8981;&#x5728;&#x4E0D;&#x540C;&#x60C5;&#x51B5;&#x4E0B;&#x627E;&#x5230;&#x5408;&#x9002;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x53E6;&#x5916;flex&#x5E03;&#x5C40;&#x8BBE;&#x8BA1;&#x7684;&#x66F4;&#x6E05;&#x6670;&#xFF0C;&#x529F;&#x80FD;&#x66F4;&#x5F3A;&#x5927;&#xFF0C;&#x6240;&#x4EE5;&#x5141;&#x8BB8;&#x7684;&#x8BDD;&#x591A;&#x8003;&#x8651;flex&#x5E03;&#x5C40;&#x7684;&#x65B9;&#x5F0F;&#x3002;</p>
+<hr>
+<p>&#x53C2;&#x8003;&#xFF1A;<a href="https://css-tricks.com/centering-css-complete-guide/#center-horizontally" target="_blank">Centering in CSS</a></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../web-basic/index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: HTML/CSS基础"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
